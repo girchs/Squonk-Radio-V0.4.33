@@ -110,8 +110,7 @@ async def show_playlist(callback_query: types.CallbackQuery):
     if not songs:
         await callback_query.answer("No songs found.")
         return
-    text = "🎵 Playlist:
-"
+    text = "🎵 Playlist:"
     for i, s in enumerate(songs, 1):
         text += f"{i}. {s['title']} by {s['artist']}
 "
