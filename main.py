@@ -27,8 +27,7 @@ def save_data(data):
 
 @dp.message_handler(commands=['start'])
 async def cmd_start(message: types.Message):
-    await message.reply("👋 Welcome to Squonk Radio V0.4.3!
-Use /setup to link your group.")
+    await message.reply("👋 Welcome to Squonk Radio V0.4.3!\nUse /setup to link your group.")
 
 @dp.message_handler(commands=['setup'])
 async def cmd_setup(message: types.Message):
