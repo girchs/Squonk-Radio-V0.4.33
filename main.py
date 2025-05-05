@@ -112,8 +112,7 @@ async def show_playlist(callback_query: types.CallbackQuery):
         return
     text = "🎵 Playlist:"
     for i, s in enumerate(songs, 1):
-        text += f"{i}. {s['title']} by {s['artist']}
-"
+        text += f"{i}. {s['title']} by {s['artist']}"
     await bot.send_message(chat_id=group_id, text=text)
 
 @dp.message_handler(commands=["reset"])
